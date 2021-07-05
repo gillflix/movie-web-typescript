@@ -9,7 +9,7 @@ import { ReviewModalContext } from '../utils/ModalContext';
 const theme = extendTheme({
   colors: {
     brand: {
-      300: `#84C9FB`,
+      300: `#A70000`,
     },
   },
 });
@@ -24,9 +24,9 @@ function MyApp({ Component, pageProps }: AppProps): React.ReactChild {
         titleTemplate={'%s | SMDB'}
         description={'A private movie rating website'}
         openGraph={{
-          title: `ScuffedMDB`,
+          title: `Gillflix`,
           type: `website`,
-          site_name: `ScuffedMDB`,
+          site_name: `Gillflix`,
           images: [
             {
               url: `https://www.movie.michael-hall.me/sitePicture.png`,
