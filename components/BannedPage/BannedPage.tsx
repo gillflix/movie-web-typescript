@@ -26,7 +26,7 @@ export const BannedPage: React.FC<{ user: UserType }> = ({
           display={{ base: `block`, lg: `inline` }}
           w="full"
           bgClip="text"
-          bgGradient="linear(to-r, green.400,purple.500)"
+          bgGradient="linear(to-r, red.500,red.800)"
           fontWeight="extrabold"
         >
           You have been banned!

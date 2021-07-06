@@ -87,7 +87,7 @@ export const Card: React.FC<CardProps> = ({ movie }): React.ReactElement => {
             >
               {name}
             </Text>
-            <Badge colorScheme="purple">{genres[0]}</Badge>
+            <Badge colorScheme="red">{genres[0]}</Badge>
           </Flex>
           <HStack justifyContent="space-between" alignItems="flex-start" mt={3}>
             <Text color="gray.500" isTruncated>

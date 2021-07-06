@@ -114,7 +114,7 @@ export const ReviewModal: React.FC<{ isAdmin: boolean }> = ({
       <Button
         variant="ghost"
         width="full"
-        colorScheme="purple"
+        colorScheme="red"
         mr={isAdmin ? 0 : 3}
         leftIcon={<AddIcon />}
         onClick={() => onOpen()}
@@ -209,12 +209,12 @@ export const ReviewModal: React.FC<{ isAdmin: boolean }> = ({
                   >
                     <SliderTrack>
                       <SliderFilledTrack
-                        bg={useColorModeValue(`purple.500`, `purple.300`)}
+                        bg={useColorModeValue(`red.500`, `red.300`)}
                       />
                     </SliderTrack>
                     <SliderThumb fontSize="sm" boxSize={6}>
                       <Box
-                        color={useColorModeValue(`purple.500`, `purple.300`)}
+                        color={useColorModeValue(`red.500`, `red.300`)}
                         as={AiFillHeart}
                       />
                     </SliderThumb>
@@ -257,7 +257,7 @@ export const ReviewModal: React.FC<{ isAdmin: boolean }> = ({
             borderBottomRadius="md"
           >
             <Button
-              colorScheme="purple"
+              colorScheme="red"
               mr={3}
               onClick={(e) => handleSubmit(e, onClose)}
               isDisabled={!!(commentError || movieError)}

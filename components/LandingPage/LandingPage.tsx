@@ -34,7 +34,7 @@ export const LandingPage: React.FC = (): React.ReactElement => (
           display={{ base: `block`, lg: `inline` }}
           w="full"
           bgClip="text"
-          bgGradient="linear(to-r, green.400,purple.500)"
+          bgGradient="linear(to-r, red.500,red.800)"
           fontWeight="extrabold"
         >
           Gillflix
@@ -47,12 +47,12 @@ export const LandingPage: React.FC = (): React.ReactElement => (
         fontSize={{ base: `lg`, md: `xl` }}
         color={useColorModeValue(`gray.600`, `gray.300`)}
       >
-        The website where cool kids write movie reviews :).
+        The website where cool kids write movie reviews :)
       </chakra.p>
       <Button
         as="a"
         variant="solid"
-        color={useColorModeValue(`purple.700`, `purple.300`)}
+        color={useColorModeValue(`red.700`, `red.300`)}
         display="inline-flex"
         alignItems="center"
         justifyContent="center"

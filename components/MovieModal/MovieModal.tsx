@@ -96,7 +96,7 @@ export const MovieModal: React.FC = (): React.ReactElement => {
     <>
       <Button
         variant="solid"
-        colorScheme="purple"
+        colorScheme="red"
         mr={3}
         leftIcon={<AddIcon />}
         onClick={onOpen}
@@ -124,7 +124,7 @@ export const MovieModal: React.FC = (): React.ReactElement => {
                       placeholder="Search OMDB..."
                     />
                   </InputGroup>
-                  <Button type="submit" ml={5} colorScheme="purple">
+                  <Button type="submit" ml={5} colorScheme="red">
                     Search
                   </Button>
                 </Flex>
@@ -148,7 +148,7 @@ export const MovieModal: React.FC = (): React.ReactElement => {
             bg={useColorModeValue(`gray.50`, `gray.800`)}
             roundedBottom="md"
           >
-            <Button colorScheme={'purple'} onClick={onClose}>
+            <Button colorScheme={'red'} onClick={onClose}>
               Cancel
             </Button>
           </ModalFooter>

@@ -246,7 +246,7 @@ export const MovieDetailsModal: React.FC<MovieDetailsModalProps> = ({
                                 href={`${process.env.NEXT_PUBLIC_APP_URI}/user/${review.user._id}`}
                                 size="sm"
                                 variant="ghost"
-                                colorScheme="purple"
+                                colorScheme="red"
                               >
                                 Visit profile
                               </Button>
@@ -303,7 +303,7 @@ export const MovieDetailsModal: React.FC<MovieDetailsModalProps> = ({
                   onClose();
                   return reviewOnOpen();
                 }}
-                colorScheme="purple"
+                colorScheme="red"
               >
                 Add review
               </Button>
