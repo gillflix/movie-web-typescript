@@ -56,6 +56,7 @@ const MovieAPI = async (
         name: movieData.original_title,
         movieID,
         genres: [...genres],
+        imdb_id: movieData.imdb_id,
         image: `https://image.tmdb.org/t/p/original/${movieData.backdrop_path}`,
         description: movieData.overview,
         tagLine: movieData.tagline,

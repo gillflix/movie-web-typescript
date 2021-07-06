@@ -101,18 +101,18 @@ export const MovieModal: React.FC = (): React.ReactElement => {
         leftIcon={<AddIcon />}
         onClick={onOpen}
       >
-        Add movie
+        Add film
       </Button>
 
       <Modal initialFocusRef={initialRef} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Add a movie</ModalHeader>
+          <ModalHeader>Add a film</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <form onSubmit={handleSubmit}>
               <FormControl>
-                <FormLabel>Find movie</FormLabel>
+                <FormLabel>Find film</FormLabel>
                 <Flex>
                   <InputGroup>
                     <InputLeftElement pointerEvents="none">

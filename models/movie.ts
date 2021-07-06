@@ -19,6 +19,7 @@ const movieSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
     movieID: { type: String },
+    imdb_id: { type: String },
     image: { type: String },
     genres: { type: Array },
     description: { type: String },

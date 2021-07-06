@@ -316,7 +316,7 @@ export const MovieDetailsModal: React.FC<MovieDetailsModalProps> = ({
                 >
                   <PopoverTrigger>
                     <Button colorScheme="red" isLoading={loading}>
-                      Delete Movie
+                      Delete film
                     </Button>
                   </PopoverTrigger>
 
