@@ -37,7 +37,7 @@ export const LandingPage: React.FC = (): React.ReactElement => (
           bgGradient="linear(to-r, green.400,purple.500)"
           fontWeight="extrabold"
         >
-          ScuffedMDB
+          Gillflix
         </Text>
         {` `}
       </chakra.h1>

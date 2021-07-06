@@ -3,13 +3,11 @@ import {
   Flex,
   chakra,
   Stack,
-  Text,
   Tooltip,
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import Link from 'next/link';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaDiscord } from 'react-icons/fa';
 
 const SocialIcons = ({ children, href, label }) => {
   return (
@@ -45,32 +43,22 @@ export const Footer: React.FC = (): React.ReactElement => (
       px={{ base: `6`, md: `8` }}
       align="center"
     >
-      <Link href="/">
-        <a aria-current="page" aria-label="Back to Home page" rel="home">
-          <h1>ScuffedMDB</h1>
-        </a>
-      </Link>
-
-      <Text marginStart={{ md: `auto` }} justifySelf="middle">
-        Made by Mikerophone 🤠
-      </Text>
-
       <Stack direction="row" spacing={6} ml="auto" mr={{ base: `auto`, md: 5 }}>
-        <SocialIcons label="GitHub" href="https://github.com/mah51/">
+        <SocialIcons label="GitHub" href="https://github.com/gillflix/">
           <FaGithub />
         </SocialIcons>
         <SocialIcons
-          label="LinkedIn"
-          href="https://www.linkedin.com/in/michael-hall-86616b17b/"
+          label="Twitter"
+          href="https://twitter.com/gillflix"
         >
-          <FaLinkedin />
+          <FaTwitter />
         </SocialIcons>
 
         <SocialIcons
-          label="Instagram"
-          href="https://www.instagram.com/michael.__.hall/"
+          label="Discord"
+          href="https://discord.com/invite/T8SUMA2tgf"
         >
-          <FaInstagram />
+          <FaDiscord />
         </SocialIcons>
       </Stack>
     </Flex>

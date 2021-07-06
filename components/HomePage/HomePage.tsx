@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useColorMode, useToast } from '@chakra-ui/react';
+import { useToast } from '@chakra-ui/react';
 import AppLayout from '../AppLayout';
 import CardGrid from '../CardGrid';
 import { MovieType } from '../../models/movie';
@@ -17,28 +17,17 @@ export const HomePage: React.FC<HomePageProps> = ({
   movies,
   movieID,
 }): React.ReactElement => {
-  const { colorMode } = useColorMode();
   const toast = useToast();
   // Fix for https://github.com/chakra-ui/chakra-ui/issues/3076
   useEffect(() => {
-    toast.update(`test`, {
-      variant: `subtle`,
-      position: `top`,
-      title: `Read only mode`,
-      description: `You do not have permissions to add or remove reviews.`,
-      status: `error`,
-      isClosable: true,
-    });
-  }, [colorMode, toast]);
-  useEffect(() => {
     if (!user.isAdmin && !user.isReviewer) {
       toast({
-        id: `test`,
-        variant: `subtle`,
+        id: `nonReviewer`,
+        variant: `solid`,
         position: `top`,
-        title: `Read only mode`,
-        description: `You do not have permissions to add or remove reviews.`,
-        status: `error`,
+        title: `View-only mode`,
+        description: `Join the Discord server and say hi to enable reviewing, link in page footer.`,
+        status: `info`,
         isClosable: true,
       });
     }
@@ -46,7 +35,6 @@ export const HomePage: React.FC<HomePageProps> = ({
   return (
     <>
       <NextSeo title="Home" />
-
       <AppLayout user={user} showMovies>
         <div>
           <CardGrid movies={movies} user={user} movieID={movieID} />

@@ -55,7 +55,7 @@ export const Nav: React.FC<NavProps> = ({
             <Link href="/">
               <a>
                 <Heading fontSize="2xl">
-                  {useBreakpointValue({ base: 'SMDB', md: 'ScuffedMDB' })}
+                  {useBreakpointValue({ base: 'Gillflix', md: 'Gillflix' })}
                 </Heading>
               </a>
             </Link>
