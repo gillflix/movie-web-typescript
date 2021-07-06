@@ -26,12 +26,6 @@ function MyApp({ Component, pageProps }: AppProps): React.ReactChild {
           title: `Gillflix`,
           type: `website`,
           site_name: `Gillflix`,
-          images: [
-            {
-              url: `https://www.movie.michael-hall.me/sitePicture.png`,
-              alt: `Profile Picture`,
-            },
-          ],
         }}
       />
       

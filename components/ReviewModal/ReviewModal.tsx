@@ -35,7 +35,7 @@ import { useBetween } from 'use-between';
 
 import { useQuery, useQueryClient } from 'react-query';
 
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillHeart } from 'react-icons/ai';
 import { getMovies } from '../../utils/queries';
 import { MovieType } from '../../models/movie';
 import { ReviewEndpointBodyType } from '../../types/APITypes';
@@ -60,7 +60,7 @@ export const ReviewModal: React.FC<{ isAdmin: boolean }> = ({
     if (success) {
       queryClient.invalidateQueries(`movies`).catch(console.error);
       toast({
-        variant: `subtle`,
+        variant: `solid`,
         title: success === `addition` ? `Review Added` : `Review Modified`,
         description:
           success === `addition`
@@ -143,14 +143,14 @@ export const ReviewModal: React.FC<{ isAdmin: boolean }> = ({
               </FormLabel>
               <Select
                 bg={useColorModeValue('white', 'gray.700')}
-                placeholder={movie?.name || 'No Movie Selected'}
+                placeholder={movie?.name || 'No Film Selected'}
                 onChange={(e) => {
                   e.preventDefault();
                   const movieFound = movies.filter(
                     (mv) => mv.name === e.target.value
                   )[0];
                   if (!movieFound) {
-                    return setMovieError(`Please select a valid movie!`);
+                    return setMovieError(`Please select a valid film!`);
                   }
                   setMovieError(``);
                   return setMovie(movieFound);
@@ -215,7 +215,7 @@ export const ReviewModal: React.FC<{ isAdmin: boolean }> = ({
                     <SliderThumb fontSize="sm" boxSize={6}>
                       <Box
                         color={useColorModeValue(`purple.500`, `purple.300`)}
-                        as={AiFillStar}
+                        as={AiFillHeart}
                       />
                     </SliderThumb>
                   </Slider>

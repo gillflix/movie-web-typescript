@@ -45,6 +45,7 @@ export interface MovieType<T = ReviewType[]> extends Document {
   image?: string;
   genres: string;
   movieID: string;
+  imdb_id: string;
   description?: string;
   tagLine?: string;
   rating: number;

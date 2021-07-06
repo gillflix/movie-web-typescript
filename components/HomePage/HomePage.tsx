@@ -18,7 +18,6 @@ export const HomePage: React.FC<HomePageProps> = ({
   movieID,
 }): React.ReactElement => {
   const toast = useToast();
-  // Fix for https://github.com/chakra-ui/chakra-ui/issues/3076
   useEffect(() => {
     if (!user.isAdmin && !user.isReviewer) {
       toast({
