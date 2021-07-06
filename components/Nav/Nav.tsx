@@ -43,7 +43,7 @@ export const Nav: React.FC<NavProps> = ({
       <Box
         width="100vw"
         borderTop={'5px solid'}
-        borderColor={useColorModeValue('purple.500', 'purple.300')}
+        borderColor={useColorModeValue('red.500', 'red.300')}
       >
         <Flex
           h={20}
