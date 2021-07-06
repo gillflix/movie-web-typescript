@@ -51,7 +51,7 @@ export const CardGrid: React.FC<CardGridProps> = ({
   // Fix for https://github.com/chakra-ui/chakra-ui/issues/3076
   useEffect(() => {
     toast.update(`otherToast`, {
-      variant: `subtle`,
+      variant: `solid`,
       title: 'Movie not found',
       description: 'The shared movie does not exist',
       status: 'error',
@@ -87,7 +87,7 @@ export const CardGrid: React.FC<CardGridProps> = ({
       if (!foundMovie) {
         toast({
           id: 'otherToast',
-          variant: `subtle`,
+          variant: `solid`,
           title: 'Movie not found',
           description: 'The shared movie does not exist',
           status: 'error',
@@ -141,7 +141,7 @@ export const CardGrid: React.FC<CardGridProps> = ({
       />
       <Container maxW="container.xl" mt={10}>
         <Heading fontSize={{ base: '4xl', md: '6xl' }} textAlign="center">
-          We have watched{' '}
+          We have reviewed{' '}
           {
             <chakra.span color={useColorModeValue('purple.500', 'purple.300')}>
               {unSortedMovies?.data?.length}

@@ -39,7 +39,7 @@ export const MovieModal: React.FC = (): React.ReactElement => {
     if (success) {
       queryClient.invalidateQueries(`movies`).catch(console.error);
       toast({
-        variant: `subtle`,
+        variant: `solid`,
         title: success.type === `addition` ? `Movie Added` : `Movie Deleted`,
         description:
           success.type === `addition`
@@ -53,7 +53,7 @@ export const MovieModal: React.FC = (): React.ReactElement => {
       setSuccess(null);
     } else if (error) {
       toast({
-        variant: `subtle`,
+        variant: `solid`,
         title: `There was an error`,
         description: error,
         status: `error`,
